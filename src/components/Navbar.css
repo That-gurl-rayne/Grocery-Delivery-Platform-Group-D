@@ -44,8 +44,25 @@
   align-items: center;
 }
 
-.navbar-icons svg:hover path,
-.navbar-icons svg:hover circle,
-.navbar-icons svg:hover line {
+.navbar-icons a {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icons svg path,
+.navbar-icons svg line,
+.navbar-icons svg circle {
+  stroke: #0F0F0F;
+}
+
+.navbar-icons a:hover svg path,
+.navbar-icons a:hover svg line,
+.navbar-icons a:hover svg circle {
+  stroke: #E9B118;
+}
+
+.navbar-icons .active-icon svg path,
+.navbar-icons .active-icon svg line,
+.navbar-icons .active-icon svg circle {
   stroke: #E9B118;
 }
