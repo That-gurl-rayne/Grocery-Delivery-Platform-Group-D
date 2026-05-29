@@ -1,6 +1,7 @@
 /* src/pages/Products/ProductDetailPage.css */
 .product-detail-page {
   padding: 10px 0;
+   margin-top: -40px;
 }
 
 .back-btn {
