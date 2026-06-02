@@ -7,6 +7,11 @@ import "./SettingsPage.css";
 function SettingsPage() {
   const { isLoggedIn, user, logout } = useAuth();
   
+  // Theme state
+  const [darkTheme, setDarkTheme] = useState(() => {
+    return JSON.parse(localStorage.getItem("oya_dark_theme")) || false;
+  });
+
   // Notification states
   const [pushNotifs, setPushNotifs] = useState(() => {
     const stored = localStorage.getItem("oya_push_notifs");
@@ -23,7 +28,16 @@ function SettingsPage() {
     return stored !== null ? JSON.parse(stored) : false;
   });
 
-  
+  // Synchronize Dark Theme with Document Body
+  useEffect(() => {
+    localStorage.setItem("oya_dark_theme", JSON.stringify(darkTheme));
+    if (darkTheme) {
+      document.body.classList.add("dark-theme");
+    } else {
+      document.body.classList.remove("dark-theme");
+    }
+  }, [darkTheme]);
+
   // Save changes
   const saveNotifConfig = (key, val, setter) => {
     setter(val);
@@ -44,6 +58,24 @@ function SettingsPage() {
       <div className="settings-page">
         <h1 className="settings-title">App <span className="highlight">Settings</span></h1>
         
+        {/* Theme Settings */}
+        <div className="settings-card">
+          <h2>🎨 Appearance & Theme</h2>
+          <div className="setting-row">
+            <div className="setting-info">
+              <span className="setting-label">Dark Mode</span>
+              <span className="setting-desc">Switch to a dark UI for low-light environments.</span>
+            </div>
+            <label className="toggle-switch">
+              <input
+                type="checkbox"
+                checked={darkTheme}
+                onChange={(e) => setDarkTheme(e.target.checked)}
+              />
+              <span className="slider"></span>
+            </label>
+          </div>
+        </div>
 
         {/* Notifications Settings */}
         <div className="settings-card">
