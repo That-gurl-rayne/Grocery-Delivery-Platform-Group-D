@@ -47,7 +47,8 @@ npm start
 ```
 
  Project Structure
-src/
+- src/
+|-- assets
 ├── components/
 │   ├── Navbar
 │   ├── PageLayout
@@ -55,7 +56,9 @@ src/
 │   ├── cart/
 │   ├── tracking/
 │   └── auth/
-├── pages/
+-|--context
+-|--data
+-├── pages/
 │   ├── Home
 │   ├── Products
 │   ├── Cart
@@ -63,7 +66,12 @@ src/
 │   ├── Tracking
 │   ├── Profile
 │   ├── Auth
+|   |--About
+|   |--Admin
+|   |--Settings
 │   └── NotFound
+|
+|
 ├── context/
 │   ├── CartContext
 │   └── AuthContext
