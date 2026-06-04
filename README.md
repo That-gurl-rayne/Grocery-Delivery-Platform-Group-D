@@ -28,7 +28,13 @@ Login and Signup with password visibility toggle
 - Backend - Local Storage
 
  Team
- Udunna Yoanna Juochi — Project Manager, UI/UX Designer, Developer
+ - Udunna Yoanna Juochi — Project Manager, UI/UX Designer, Developer
+ - Izuchukwu Munachi Delight Chiamaka- Search & Filters
+ - Chuckwudumebi Offor Gerad Mario - Cart Page
+ - Adesegun Martins Samad - Product Listing
+ - Ademola OluwaPelumi Paul - Tracking Pages
+ - Okeke Chinedu Emmanuel- Order History & Status
+
 
 
  Getting Started
@@ -41,7 +47,8 @@ npm start
 ```
 
  Project Structure
-src/
+- src/
+|-- assets
 ├── components/
 │   ├── Navbar
 │   ├── PageLayout
@@ -49,7 +56,9 @@ src/
 │   ├── cart/
 │   ├── tracking/
 │   └── auth/
-├── pages/
+-|--context
+-|--data
+-├── pages/
 │   ├── Home
 │   ├── Products
 │   ├── Cart
@@ -57,7 +66,12 @@ src/
 │   ├── Tracking
 │   ├── Profile
 │   ├── Auth
+|   |--About
+|   |--Admin
+|   |--Settings
 │   └── NotFound
+|
+|
 ├── context/
 │   ├── CartContext
 │   └── AuthContext
