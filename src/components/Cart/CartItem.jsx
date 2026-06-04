@@ -6,7 +6,7 @@ function CartItem({ image, name, price, quantity, onDecrease, onRemove }) {
   return (
     <div className="cart-item">
 
-      {/* Left — Image + Name */}
+      {/* The image and price of what youre buying*/}
       <div className="cart-item-left">
         <div className="cart-item-image-container">
           <img src={image} alt={name} className="cart-item-image" />
@@ -15,16 +15,16 @@ function CartItem({ image, name, price, quantity, onDecrease, onRemove }) {
         <p className="cart-item-name">{name}</p>
       </div>
 
-      {/* Right — Controls */}
+      {/* the cart controls */}
       <div className="cart-item-right">
 
-        {/* Row 1 — Quantity + Remove */}
+        {/* Row 1  Quantity selector */}
         <div className="cart-item-row">
           <button className="quantity-label">Quantity</button>
           <button className="remove-btn" onClick={onRemove}>Remove</button>
         </div>
 
-        {/* Row 2 — X quantity + minus */}
+        {/* Row 2 also quantity selector*/}
         <div className="cart-item-row">
           <div className="quantity-selector">
             <span className="multiply-icon">✕</span>

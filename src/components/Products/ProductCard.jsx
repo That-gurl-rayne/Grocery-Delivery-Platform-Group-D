@@ -15,16 +15,16 @@ function ProductCard({ image, name, price, onAddToCart, onClick }) {
   return (
     <div className="product-card">
 
-      {/* Image */}
+      {/* Image of the product*/}
       <div className="product-image-container" onClick={onClick} style={{ cursor: "pointer" }}>
         <img src={image} alt={name} className="product-image" />
         <span className="product-price">N {price}</span>
       </div>
 
-      {/* Name */}
+      {/* Name of the product */}
       <button className="product-name-btn" onClick={onClick}>{name}</button>
 
-      {/* Add to Cart */}
+      {/* Add to Cart button*/}
       <button className={`add-to-cart-btn ${added ? "added" : ""}`} onClick={handleAddToCart}>
         {added ? "Added! ✓" : (
           <>

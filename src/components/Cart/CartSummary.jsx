@@ -10,12 +10,12 @@ function CartSummary({ items, deliveryFee = 500 }) {
   return (
     <div className="cart-summary">
 
-      {/* Total Header */}
+      {/* the total Header */}
       <div className="summary-header">
         <h2>Total</h2>
       </div>
 
-      {/* Items breakdown */}
+      {/* the item breakdown */}
       <div className="summary-items">
         {items.map((item, index) => (
           <div className="summary-row" key={index}>
@@ -31,7 +31,7 @@ function CartSummary({ items, deliveryFee = 500 }) {
         </div>
       </div>
 
-      {/* Checkout Button */}
+      {/*the checkout Button */}
    <Link to="/checkout" className="checkout-btn">
   <span className="checkout-left">
     Checkout
