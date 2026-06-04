@@ -29,6 +29,12 @@ Login and Signup with password visibility toggle
 
  Team
  Udunna Yoanna Juochi — Project Manager, UI/UX Designer, Developer
+ Izuchukwu Munachi Delight Chiamaka- Search & Filters
+ Chuckwudumebi Offor Gerad Mario - Cart Page
+ Adesegun Martins Samad - Product Listing
+ Ademola OluwaPelumi Paul - Tracking Pages
+ Okeke Chinedu Emmanuel- Order History & Status
+
 
 
  Getting Started
