@@ -50,7 +50,7 @@ function AboutPage() {
                 Matric No: LCU/UG/24/32298
               </span>
               <span>Olawunmi Oluwajomiloju Gerrard -
-                Matric No: LCU/Pt/24/0823
+                Matric No: LCU/Pt/24/0822
               </span>
           </div>
         </div>
