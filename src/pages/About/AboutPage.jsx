@@ -52,6 +52,9 @@ function AboutPage() {
               <span>Olawunmi Oluwajomiloju Gerrard -
                 Matric No: LCU/Pt/24/0822
               </span>
+               <span>Akinlosotu Oluwatiomisin Success-
+                Matric No: LCU/UG/24/30359
+              </span>
           </div>
         </div>
 
