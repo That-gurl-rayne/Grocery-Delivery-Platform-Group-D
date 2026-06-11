@@ -58,6 +58,7 @@ function AboutPage() {
               <span>Ayodeji Feranmi Adebowale-
                 Matric No: LCU/UG/24/31046
               </span>
+              
           </div>
         </div>
 
